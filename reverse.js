@@ -1,7 +1,7 @@
 //Given a 32-bit signed integer, reverse digits of an integer.
 
 const reverse = (x) => {
-  const max = 2146483647;
+  const max = 2147483647;
   let min = - max - 1;
   let res = 0;
   let num = x;
