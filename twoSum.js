@@ -38,4 +38,22 @@ console.log(findNums(givenNums, 9))
 // findNums([2, 7, 11, 15], 9);
 
 
+const findNum = (array, total) => {
 
+  let x;
+  let b;
+
+  for(let i = 0; i < array.length; i++){
+    b = total - array[i];
+
+    if(array.includes(b)){
+      x = array.indexOf(b)
+    }else{
+      return
+    }
+
+    return [i, x]
+  }
+}
+
+console.log(findNum([2, 7, 11, 15], 9))
